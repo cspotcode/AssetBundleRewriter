@@ -19,10 +19,16 @@ public class Cli {
                 if (fileID != 0) {
                     var name = file.Metadata.Externals[fileID - 1].PathName;
                     if (name.StartsWith("archive:/CAB-")) {
-                        Console.WriteLine(name);
+                        Console.WriteLine(f["m_PathID"].Value.AsLong);
                         f["m_PathID"].Value.AsInt = 255;
                         modified = true;
                     }
+                    else {
+                        Console.WriteLine(f["m_PathID"].Value.AsLong);
+                    }
+                }
+                else {
+                    Console.WriteLine(f["m_PathID"].Value.AsLong);
                 }
             }
             foreach(var c in f.Children) {
@@ -65,14 +71,5 @@ public class Cli {
         
         s.Stop();
         Console.WriteLine(s);
-        
-        // foreach (var texInfo in afile.GetAssetsOfType(AssetClassID.Texture2D))
-        // {
-        //     var texBase = manager.GetBaseField(afileInst, texInfo);
-        //     var name = texBase["m_Name"].AsString;
-        //     var width = texBase["m_Width"].AsInt;
-        //     var height = texBase["m_Height"].AsInt;
-        //     Console.WriteLine($"Texture {name} is sized {width}x{height}");
-        // }       
     }
 }
