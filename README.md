@@ -42,3 +42,9 @@ To postprocess assetbundles to fix their PathIDs, we need to:
 5. Write a tool to post-process AssetBundles and replace PathIDs.
 
 [//]: # (6. Integrate this tool with mapstation, so every time you press F5, the assetbundles spat out by unity are automatically post-processed)
+
+## Resources
+
+AT/Tools⁠ Discord  
+https://discord.gg/Z8bcChFx  
+https://discord.com/channels/862035581491478558/862035741202448424/1215357066059980840
