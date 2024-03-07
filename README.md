@@ -47,4 +47,5 @@ To postprocess assetbundles to fix their PathIDs, we need to:
 
 AT/Tools⁠ Discord  
 https://discord.gg/Z8bcChFx  
-https://discord.com/channels/862035581491478558/862035741202448424/1215357066059980840
+https://discord.com/channels/862035581491478558/862035741202448424/1215357066059980840  
+https://github.com/cspotcode/unity-notes/blob/main/assetbundle_pathids.md (might be private)  
